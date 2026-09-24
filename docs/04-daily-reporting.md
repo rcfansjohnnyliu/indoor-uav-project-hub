@@ -1,6 +1,8 @@
 # 每日研发小汇报
 
-计划在北京时间每日 18:00 向私有 GitHub 文档库生成一份 `reports/YYYY-MM-DD.md`，并更新首页的最近核验时间和阻断项。定时机制启用前，不能把这个计划视为已运行的自动汇报。
+GitHub Actions 配置为北京时间每日 18:00（UTC 10:00）生成 `reports/YYYY-MM-DD.md` 和 `reports/latest.md`。GitHub 定时调度可能延迟；可在 Actions 页面手动运行。首页的基线表不会被自动推断更新，最新观察由汇报展示。
+
+目前自动读取 Control Plane 的 `codex/cp-auto-control-plane` 分支，使用独立只读 deploy key，凭据存储在 Actions Secret。Dashi 和 NUC Product 尚未接入自动采集，日报会明确标注该覆盖缺口；以下完整核验顺序仍是后续接入目标。来源读取失败时发布明确的失败报告并让工作流失败。停用 Actions 中的 Daily development report 即可停止定时更新。
 
 ## 每日核验顺序
 

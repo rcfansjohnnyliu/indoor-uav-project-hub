@@ -1,0 +1,45 @@
+name: Daily development report
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Read control plane
+        id: source
+        continue-on-error: true
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: rcfansjohnnyliu/indoor-uav-control-plane
+          ref: codex/cp-auto-control-plane
+          ssh-key: ${{ secrets.CONTROL_PLANE_READ_KEY }}
+          persist-credentials: false
+          fetch-depth: 0
+          path: source-control-plane
+      - name: Generate report
+        env:
+          SOURCE_OUTCOME: ${{ steps.source.outcome }}
+        run: python3 scripts/daily_report.py
+      - name: Publish report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs: update daily development report'
+            git push origin HEAD:main
+          fi
+      - name: Surface source failure
+        if: steps.source.outcome != 'success'
+        run: |
+          echo 'Source unavailable; an explicit failure report was published.'
+          exit 1

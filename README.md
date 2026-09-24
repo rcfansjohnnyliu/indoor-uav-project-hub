@@ -1,8 +1,10 @@
 # Indoor UAV 研发进度中心
 
-> 截至 2026-09-24（北京时间）的内部摘要草稿。此目录用于拟议的私有 GitHub 文档库。
+> 私有研发资料库。下方表格为 2026-09-24 的基线；每日自动核验记录见[最新汇报](reports/latest.md)。
 
 ## 当前进度
+
+[查看最新自动汇报](reports/latest.md) · [查看自动任务运行](https://github.com/rcfansjohnnyliu/indoor-uav-project-hub/actions/workflows/daily-report.yml)
 
 | 领域 | 状态 | 最近可核验证据 |
 |---|---|---|
@@ -21,7 +23,7 @@
 - [研发管理流程](docs/02-development-governance.md)
 - [当前任务与下一步](docs/03-current-status.md)
 - [每日汇报规则](docs/04-daily-reporting.md)
-- [2026-09-24 基线汇报](reports/2026-09-24.md)
+- [2026-09-24 基线汇报](reports/2026-09-24-baseline.md)
 
 ## 资料来源与更新原则
 
