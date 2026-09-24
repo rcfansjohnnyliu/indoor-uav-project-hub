@@ -1,0 +1,19 @@
+# 2026-09-24 研发小汇报
+
+核验时间：2026-09-24 17:21:15（北京时间）。
+
+已读取控制面分支 `codex/cp-auto-control-plane`，HEAD：[4e55da942825](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/commit/4e55da942825a5ba74b29d7006eb528d6f3ecf3e)。
+
+## 最近 24 小时已推送的变更
+
+此分支最近 24 小时无已推送的新提交；本地未推送的开发进度未核验。
+
+## 进度证据入口
+
+
+## 核验范围与下一步
+
+- 上述提交和文档用于定位变化，不能据此推断测试通过、本地验收或 Dashi DONE。
+- Dashi 实时状态及 NUC Product 本地仓库尚未接入此 GitHub 定时任务；本报告不宣称它们已完成实时核验。
+- 任务状态请核对最新证据和 Dashi；执行仍须遵守有效契约及人工门禁。
+- 如需完整实时日报，后续还须接入 Dashi 和 Product 的受控只读进度数据。
