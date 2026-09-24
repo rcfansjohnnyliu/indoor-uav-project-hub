@@ -14,9 +14,11 @@ if os.environ.get('SOURCE_OUTCOME') == 'success':
     def git(*args):
         return subprocess.check_output(['git', '-C', str(source), *args], text=True).strip()
     head = git('rev-parse', 'HEAD')
+    head_date = git('log', '-1', '--format=%cI')
     since = (now - dt.timedelta(days=1)).isoformat()
     changes = git('log', f'--since={since}', '--format=%H %s')
     lines += [f'已读取控制面分支 `codex/cp-auto-control-plane`，HEAD：[{head[:12]}]({base}/commit/{head})。', '',
+              f'该分支最新提交时间：{head_date}。这不代表本地开发状态的实时更新时间。', '',
               '## 最近 24 小时已推送的变更', '']
     if changes:
         for change in changes.splitlines():
@@ -26,11 +28,15 @@ if os.environ.get('SOURCE_OUTCOME') == 'success':
     else:
         lines.append('此分支最近 24 小时无已推送的新提交；本地未推送的开发进度未核验。')
     lines += ['', '## 进度证据入口', '']
+    found = False
     for path in ['docs/control-plane/M6_T03_MAC_RESUMPTION.md', 'tasks/todo.md',
                  'docs/architecture/hgaf-replan/03_HGAF_DEVELOPMENT_PLAN.md']:
         if (source / path).is_file():
+            found = True
             updated = git('log', '-1', '--format=%cI', '--', path)
             lines.append(f'- [{path}]({base}/blob/{head}/{path})（最后提交时间：{updated}）。')
+    if not found:
+        lines.append('远端分支没有预期的最新任务证据文档，不能核实实时任务进度。参见[人工核验基线](2026-09-24-baseline.md)，其日期不代表当前状态。')
 else:
     lines += ['**本次控制面来源读取失败，当前开发进度无法核验。** 请检查本次 Actions 运行及来源读取权限。']
 lines += ['', '## 核验范围与下一步', '',
