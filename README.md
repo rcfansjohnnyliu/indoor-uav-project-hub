@@ -15,6 +15,7 @@
 | 领域 | 状态 | 最近可核验证据 |
 |---|---|---|
 | 自动化基础 M0-A | 已关闭并冻结 | Control Plane `orchestration/PROJECT_STATE.md` |
+| 七寸基础飞行 | 用户确认已能稳定定点悬停与飞行 | 2026-09-28 硬件图片及说明：MicoAir743 V2 / PX4 1.15.4；本轮未独立实测 |
 | HGAF 软件开发 | 软件原型与离线验证；整机目标尚未验收 | Product HEAD `21c295cc4783aa371ef6d22be9c6518cd7a218b3`，2026-09-28 只读检查，工作区干净 |
 | M6-T02 | 本地已验收；录制遥测验证 | 2026-09-28 本地权威记录 `DONE/ACCEPTED`、attempt 1；不等同实时飞控验证 |
 | M6-T03 | 已绑定当前 Product HEAD；尚未执行 | 2026-09-28 本地权威记录 `READY/PENDING`、attempt 0；Dashi 在线未核验 |
@@ -27,6 +28,7 @@
 ## 导航
 
 - [当前开发计划、工作包与验收门禁](tasks/plan.md)
+- [已验证飞行平台与机载接口缺口](docs/09-seven-inch-hardware-baseline.md)
 - [补充需求和开源参考原文](docs/references/2026-09-28/README.md)
 - [产品目标与研发阶段](docs/01-product-and-roadmap.md)
 - [HGAF 具体研发方案](docs/05-execution-plan.md)

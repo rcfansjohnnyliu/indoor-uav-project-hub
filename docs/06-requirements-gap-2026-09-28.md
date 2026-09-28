@@ -6,6 +6,8 @@
 
 ## 当前检查点
 
+后续用户补充：现有七寸机在 PX4 1.15.4 下已稳定定点悬停及飞行，按[用户确认的硬件基线](09-seven-inch-hardware-baseline.md)复用。下表关于新增自主功能的证据缺口仍有效；不得将这些缺口解读为飞机基础悬停尚未实现。
+
 - Product HEAD：`21c295cc4783aa371ef6d22be9c6518cd7a218b3`，工作区干净。
 - Control Plane HEAD：`d4b3e9c0907fe34adca549098be2383a19b9d248`。
 - 本次只读运行态核验：M6-T02 `DONE/ACCEPTED`、attempt 1；M6-T03 `READY/PENDING`、attempt 0，绑定当前 Product HEAD，契约摘要 `e0c555fecdaf6f2cd3407ac21809c8647260c17dd4780fba491645a22d556629`。
