@@ -6,6 +6,8 @@
 
 **交付节奏已调整：每周检查可运行增量，每两周交付演示版本。** [查看首个双周和四轮演示安排](docs/08-demo-delivery-cadence.md)。首个目标为真实视频的指定人员与骨架跟踪，10 月 12 日为首个完整版本目标检查点；这些是计划目标，不代表已派发或已实现。
 
+**1～2 个月产品目标：** 10 月 26～28 日争取核心集成原型，11 月 23～28 日争取限定室内场景的七寸功能原型与重复验收。现场支持和感知硬件尚待确认，目标是否可达按双周实际结果判断，详见[计划](tasks/plan.md)。
+
 ## 当前进度
 
 [查看最新自动汇报](reports/latest.md) · [查看自动任务运行](https://github.com/rcfansjohnnyliu/indoor-uav-project-hub/actions/workflows/daily-report.yml)
