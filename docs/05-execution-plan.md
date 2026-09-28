@@ -1,5 +1,7 @@
 # HGAF 具体研发方案
 
+> 历史方案摘要。2026-09-28 补充需求的当前开发顺序、任务覆盖和完成门禁见[最新计划](../tasks/plan.md)。下方旧阶段划分及 M6-T03 绑定说明不作当前运行态依据。
+
 此页整理 Control Plane `docs/architecture/hgaf-replan/03_HGAF_DEVELOPMENT_PLAN.md` 的 G0–G13 方案。原文标记为 `PROPOSAL — NOT EXECUTION AUTHORITY`；此页是研发管理视图，不替代逐任务契约或人工授权。
 
 | 门禁 | 开发交付 | 通过所需证据 | 阻断条件 |
