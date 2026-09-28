@@ -1,3 +1,5 @@
+> 2026-09-28 流程修订：Dashi 已退出日常开发，相关历史阻塞不再阻止新软件工作；以[当前流程](02-development-governance.md)为准。日报仍仅采集配置的 GitHub 来源，不代表实时 Product 状态。
+
 # 每日研发小汇报
 
 GitHub Actions 配置为北京时间每日 18:00（UTC 10:00）生成 `reports/YYYY-MM-DD.md` 和 `reports/latest.md`。GitHub 定时调度可能延迟；可在 Actions 页面手动运行。首页的基线表不会被自动推断更新，最新观察由汇报展示。

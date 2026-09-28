@@ -1,3 +1,5 @@
+> 2026-09-28 流程修订：Dashi 已退出日常开发，相关历史阻塞不再阻止新软件工作；以[当前流程](02-development-governance.md)为准。日报仍仅采集配置的 GitHub 来源，不代表实时 Product 状态。
+
 # 当前任务与下一步
 
 核验时间：2026-09-28（北京时间）。本页基于 Control Plane 文档、Product 仓库和本地运行记录只读检查；未读取 Dashi 实时任务板。完整新增需求差距见[需求对照表](06-requirements-gap-2026-09-28.md)。
