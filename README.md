@@ -4,6 +4,8 @@
 
 **当前规划入口：[七寸 RK3588 开发计划](tasks/plan.md) · [REQ-01～14 实现与证据差距](docs/06-requirements-gap-2026-09-28.md) · [2026-09-28 补充审查](reports/2026-09-28-review.md)**
 
+**交付节奏已调整：每周检查可运行增量，每两周交付演示版本。** [查看首个双周和四轮演示安排](docs/08-demo-delivery-cadence.md)。首个目标为真实视频的指定人员与骨架跟踪，10 月 12 日为首个完整版本目标检查点；这些是计划目标，不代表已派发或已实现。
+
 ## 当前进度
 
 [查看最新自动汇报](reports/latest.md) · [查看自动任务运行](https://github.com/rcfansjohnnyliu/indoor-uav-project-hub/actions/workflows/daily-report.yml)
