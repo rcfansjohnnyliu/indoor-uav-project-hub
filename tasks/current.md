@@ -1,4 +1,6 @@
-# 一月交付检查点
+# 当前任务公开摘要 — 2026-10-09
+
+活动任务以[私有协调仓库 tasks/current.md](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/codex/simplify-development-workflow/tasks/current.md)为准。本页不复制内部原始任务与诊断记录。
 
 | 任务 | 计划日期 | 交付 | 前置 | 当前状态 |
 | --- | --- | --- | --- | --- |
@@ -12,9 +14,6 @@
 | SM-08 | Nov3–5 | 分级受限飞行、重复首演 | SM-07；逐次飞行授权 | PLANNED |
 | SM-09 | Nov6–9 | 定向修复/复测与最终证据 | SM-08 | PLANNED |
 
-Oct12–Nov9 共 21 个周一至周五日期，时间盒合计 2+3+2+3+2+2+2+3+2=21 天，仅两天修复余量。日历容量不是已测开发速度或交付保证。Oct13、Oct16、Oct23、Oct29、Nov2 逐级核验；失败立即报告截止目标风险，不降低门槛。
+现有标定任务进行中且未验收；当前原板重复性检查等待现场就位。所有 SM/DF 新开发工作仍为 PLANNED。
 
-暂定最终证据为三次至少三分钟的重复演示，加目标丢失与接管测试；须先核验实装续航和场地，再冻结验收。距离误差、最小间隔、速度、加速度和时效预算由实测冻结，尚不能给出已合格的数值。
-
-
-[完整安排](../tasks/plan.md) · [此前双周计划](archive/2026-09-28/docs/08-demo-delivery-cadence.md)
+[完整私有计划](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/codex/simplify-development-workflow/tasks/plan.md) · [进度摘要](../docs/03-current-status.md) · [全部资料库](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/codex/simplify-development-workflow/docs/project-progress/README.md)

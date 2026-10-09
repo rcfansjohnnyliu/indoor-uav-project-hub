@@ -1,20 +1,22 @@
-> 2026-09-28 流程修订：Dashi 已退出日常开发，相关历史阻塞不再阻止新软件工作；以[当前流程](02-development-governance.md)为准。日报仍仅采集配置的 GitHub 来源，不代表实时 Product 状态。
+# 当前开发进度摘要 — 2026-10-09
 
-# 当前任务与下一步
+完整源记录见[私有活动任务](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/codex/simplify-development-workflow/tasks/current.md)和[私有证据资料库](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/codex/simplify-development-workflow/docs/project-progress/README.md)。此页提供公开摘要，不能代替原始验收。
 
-核验时间：2026-09-28（北京时间）。本页基于 Control Plane 文档、Product 仓库和本地运行记录只读检查；未读取 Dashi 实时任务板。完整新增需求差距见[需求对照表](06-requirements-gap-2026-09-28.md)。
+| 领域 | 已记录进度 | 仍待验证或完成 |
+| --- | --- | --- |
+| 飞机基础 | 用户确认已装好，人工稳定悬停、室内定位与遥控接管已验证 | 同一计算板/相机/安装/供电载荷的等价性未核实，本轮未独立复飞 |
+| 双目采集 | RK3588 双 AR0234 预览恢复并持续更新 | 当前原板静止重复性采集待现场就位；曝光同步未建立 |
+| 人体模型 | YOLO26s-Pose FP16 / RKNN 已接入 A 路预览 | 当前无身份输出；双视图同人对应、RK3588 身份集成与米制目标未完成 |
+| 身份复用 | 旧平台已有 OSNet 与身份选取/跟踪实现 | 须在当前平台验证数值、性能和指定身份连续性 |
+| 标定测距 | 已有静态观察与诊断证据 | 1.15m 冻结检查无有效距离；完整 1–3m 未验收，不能由三次较远静态结果推断全范围精度 |
+| 软件测试 | 最近已记录 414 项测试和安全检查通过 | 分支限定的 bootstrap 检查失败仍保留；同步任务未重跑 Product 测试 |
+| 跟随系统 | 已有离线接口、控制与生命周期原型 | 动态米制感知、变换、控制、实际闭环 PX4 SITL、去桨和实机跟随尚未验收 |
+| 一月交付 | 九项冲刺和完整路线图已记录 | 全部新开发任务仍 PLANNED；Nov9 目标风险高 |
 
-| 项目 | 已确认情况 | 下一步 / 门禁 |
-|---|---|---|
-| Product 代码 | HEAD `21c295cc4783aa371ef6d22be9c6518cd7a218b3`，工作区干净 | 后续任务须重新核验 HEAD 和工作区 |
-| M6-T02 | 2026-09-28 本地运行记录为 `DONE/ACCEPTED`，attempt 1；范围为录制遥测 | 核对 Dashi 投影及审计状态 |
-| M6-T03 | 本地 `READY/PENDING`、attempt 0；已绑定当前 Product HEAD 和修订摘要 `e0c555fecdaf` | 核对已有任务专属授权、Dashi 在线版本、依赖、HEAD、runner 和重试预算；新需求覆盖需走正式契约流程 |
-| M6-T04 | 本地 `READY/PENDING`、attempt 0，仍绑定旧 HEAD | 前置 M6-T03 未接受，READY 不代表可派发 |
-| 自动开发 | runner、orchestrator timer、controlled-soak 均 inactive/disabled，心跳停在 9 月 20 日 | 核对停用原因和治理条件，不将日报正常等同于持续开发 |
-| 硬件 / HIL / 飞行 | 无本次任务授权记录 | 保持人工门禁 |
+## 当前阻塞与下一项
 
-M6-T03 的限定范围是离线、非 arming 的命令路径验证，使用 mock/录制输入；其软件证据不能替代真实 FCU、台架、HIL 或飞行验证。
+原始六标记板的固定场景重复性等待现场就位。先解决和诊断几何重复性，再独立测定首演范围；身份软件和模拟环境准备可穿插。静态板测距不能证明运动人体或机载振动下的距离有效。
 
-## 已知资料时差
+[全部计划摘要](../tasks/plan.md) · [检查点](08-demo-delivery-cadence.md) · [当前流程](02-development-governance.md)
 
-`orchestration/PROJECT_STATE.md` 与 `orchestration/TASK_GRAPH.md` 仍保留 M1-F 时期的任务快照，因此不能作为 M6 实时进度。2026-09-23 恢复检查点中的 M6-T03 旧绑定已被本次运行态读取更新。Dashi 实时版本和状态尚未独立核实，GitHub 定时报告也尚未接入本地实时数据。
+完整内部资料已同步到私有协调仓库。公开日报仅发布源码版本/更新数量和私有证据入口，不复制内部任务正文或提交说明。自动报告成功不等于测试或整机开发完成。
