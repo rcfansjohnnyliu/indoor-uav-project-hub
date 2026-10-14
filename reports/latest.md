@@ -1,20 +1,20 @@
 # 2026-10-14 研发小汇报
 
-报告生成时间：2026-10-14 01:27:44（北京时间）。
+报告生成时间：2026-10-14 22:57:30（北京时间）。
 
-已读取私有控制面分支 `codex/simplify-development-workflow`，HEAD：[778572bbc46d](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/commit/778572bbc46df3dc057d17a6b7ee1b56a0074ea1)。
+已读取私有控制面分支 `codex/simplify-development-workflow`，HEAD：[0f614ba17331](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/commit/0f614ba173319c21ebe6e22118f088cf2ad04087)。
 
-最新提交时间：2026-10-13T18:27:40+08:00。提交时间不代表本地开发状态的实时更新时间。
+最新提交时间：2026-10-14T10:42:48+08:00。提交时间不代表本地开发状态的实时更新时间。
 
 ## 最近 24 小时已推送的变更
 
-私有来源最近 24 小时有 9 项已推送提交；详细内容请登录私有仓库查阅。
+私有来源最近 24 小时有 1 项已推送提交；详细内容请登录私有仓库查阅。
 
 ## 活动计划与任务证据
 
-- [tasks/current.md](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/778572bbc46df3dc057d17a6b7ee1b56a0074ea1/tasks/current.md)（最后提交：2026-10-13T18:27:40+08:00）。
-- [tasks/plan.md](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/778572bbc46df3dc057d17a6b7ee1b56a0074ea1/tasks/plan.md)（最后提交：2026-10-13T18:27:40+08:00）。
-- [docs/DEVELOPMENT_WORKFLOW.md](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/778572bbc46df3dc057d17a6b7ee1b56a0074ea1/docs/DEVELOPMENT_WORKFLOW.md)（最后提交：2026-09-28T16:33:16+08:00）。
+- [tasks/current.md](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/0f614ba173319c21ebe6e22118f088cf2ad04087/tasks/current.md)（最后提交：2026-10-14T10:42:48+08:00）。
+- [tasks/plan.md](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/0f614ba173319c21ebe6e22118f088cf2ad04087/tasks/plan.md)（最后提交：2026-10-14T10:42:48+08:00）。
+- [docs/DEVELOPMENT_WORKFLOW.md](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/0f614ba173319c21ebe6e22118f088cf2ad04087/docs/DEVELOPMENT_WORKFLOW.md)（最后提交：2026-09-28T16:33:16+08:00）。
 
 ## Product 快照与读取范围
 
@@ -22,9 +22,9 @@ Product 快照采集时间：2026-10-09T16:46:31+08:00；本地源码 HEAD：`01
 
 此快照非实时：Actions 未连接 NUC，也未读取实机或最新本地测试。
 
-- [私有采集清单与文件哈希](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/778572bbc46df3dc057d17a6b7ee1b56a0074ea1/docs/project-progress/snapshots/manifest.json)
+- [私有采集清单与文件哈希](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/0f614ba173319c21ebe6e22118f088cf2ad04087/docs/project-progress/snapshots/manifest.json)
 - [公开进度摘要](../docs/03-current-status.md)
-- [完整私有计划](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/778572bbc46df3dc057d17a6b7ee1b56a0074ea1/tasks/plan.md)
+- [完整私有计划](https://github.com/rcfansjohnnyliu/indoor-uav-control-plane/blob/0f614ba173319c21ebe6e22118f088cf2ad04087/tasks/plan.md)
 
 ## 状态口径
 
